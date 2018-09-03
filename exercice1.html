@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app>
+  <head>
+    <meta charset="utf-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.2/angular.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercice 1</title>
+  </head>
+  <body>
+    <form name="myForm" ng-submit="foo()" novalidate>
+      <label>E-mail : </label>
+      <input id="inpval" name="mail" ng-model="mail" type="email" required/>
+      <div ng-hide="myForm.mail.$valid" ng-show="myForm.mail.$error" id="divRed"></div>
+      <div ng-show="myForm.mail.$valid" ng-hide="myForm.mail.$error" id="divGreen"></div>
+    </form>
+  </body>
+</html>

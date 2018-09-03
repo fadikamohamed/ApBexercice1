@@ -1,0 +1,10 @@
+#divGreen {
+  width: 10px;
+  height: 10px;
+  border: 1px green solid;
+}
+#divRed {
+  width: 10px;
+  height: 10px;
+  border: 1px red solid;
+}
